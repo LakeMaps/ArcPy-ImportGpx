@@ -23,11 +23,17 @@ feature_class = arcpy.CreateFeatureclass_management(
 tree = etree.parse(gpx_file)
 tracks = tree.findall(GPX_ELEMENT_TRACK)
 
+arcpy.env.autoCancelling = False
+
 with arcpy.da.InsertCursor(feature_class, ['SHAPE@XY', 'SHAPE@Z']) as cursor:
     for track in tracks:
+        if arcpy.env.isCancelled:
+            break
         name = track.find(GPX_ELEMENT_NAME).text
         points = track.findall('.//' + GPX_ELEMENT_TRACK_POINT)
         for track_point in points:
+            if arcpy.env.isCancelled:
+                break
             depth = float(track_point.find('.//' + GPX_ELEMENT_WATER_DEPTH).text)
             xy = (float(track_point.attrib.get('lon')), float(track_point.attrib.get('lat')))
             cursor.insertRow([xy, -depth])
