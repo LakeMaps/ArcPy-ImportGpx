@@ -32,8 +32,11 @@ for track in tracks:
     for track_point in points:
         if arcpy.env.isCancelled:
             break
+        depth_element = track_point.find('.//' + GPX_ELEMENT_WATER_DEPTH)
+        if depth_element is None:
+            continue
         timestamp = track_point.find('.//' + GPX_ELEMENT_TIME).text
-        depth = float(track_point.find('.//' + GPX_ELEMENT_WATER_DEPTH).text)
+        depth = float(depth_element.text)
         gpx_points.append((
             float(track_point.attrib.get('lon')), float(track_point.attrib.get('lat')), -depth, timestamp, name, depth))
 
