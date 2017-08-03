@@ -27,7 +27,7 @@ arcpy.env.autoCancelling = False
 for track in tracks:
     if arcpy.env.isCancelled:
         break
-    name = track.find(GPX_ELEMENT_NAME).text
+    name = track.findtext(GPX_ELEMENT_NAME)
     points = track.findall('.//' + GPX_ELEMENT_TRACK_POINT)
     for track_point in points:
         if arcpy.env.isCancelled:
@@ -35,7 +35,7 @@ for track in tracks:
         depth_element = track_point.find('.//' + GPX_ELEMENT_WATER_DEPTH)
         if depth_element is None:
             continue
-        timestamp = track_point.find('.//' + GPX_ELEMENT_TIME).text
+        timestamp = track_point.findtext('.//' + GPX_ELEMENT_TIME)
         depth = float(depth_element.text)
         gpx_points.append((
             float(track_point.attrib.get('lon')), float(track_point.attrib.get('lat')), -depth, timestamp, name, depth))
