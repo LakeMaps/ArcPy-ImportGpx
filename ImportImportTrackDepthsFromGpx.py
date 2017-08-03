@@ -5,9 +5,7 @@ import xml.etree.ElementTree as etree
 GPX_ELEMENT_NAME = '{http://www.topografix.com/GPX/1/1}name'
 GPX_ELEMENT_TRACK = '{http://www.topografix.com/GPX/1/1}trk'
 GPX_ELEMENT_TRACK_POINT = '{http://www.topografix.com/GPX/1/1}trkpt'
-# Alternatively {http://www.garmin.com/xmlschemas/GpxExtensions/v3}TrackPointExtension
 GPX_ELEMENT_TRACK_POINT_EXTENSION = '{http://www.garmin.com/xmlschemas/TrackPointExtension/v1}TrackPointExtension'
-# Alternatively {http://www.garmin.com/xmlschemas/GpxExtensions/v3}Depth
 GPX_ELEMENT_WATER_DEPTH = '{http://www.garmin.com/xmlschemas/TrackPointExtension/v1}depth'
 
 gpx_file = arcpy.GetParameterAsText(0)
