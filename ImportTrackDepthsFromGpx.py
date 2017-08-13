@@ -14,8 +14,8 @@ gpx_file = arcpy.GetParameterAsText(0)
 output_feature_class = arcpy.GetParameterAsText(1)
 
 if arcpy.Exists(output_feature_class):
-    arcpy.AddError("{0} already exists".format(output_feature_class))
-    arcpy.AddMessage("The given feature class must not exist as it will be created internally")
+    arcpy.AddError('{0} already exists'.format(output_feature_class))
+    arcpy.AddMessage('The given feature class must not exist as it will be created internally')
     raise arcpy.ExecuteError
 
 tree = etree.parse(gpx_file)
@@ -40,7 +40,14 @@ for track in tracks:
         gpx_points.append((
             float(track_point.attrib.get('lon')), float(track_point.attrib.get('lat')), -depth, timestamp, name, depth))
 
-feature_class_array = numpy.array(gpx_points,
-    numpy.dtype([('x', numpy.float), ('y', numpy.float), ('z', numpy.float), ('Timestamp', '|S21'), ('Track Name', '|S256'), ('Water Depth', numpy.float)]))
+feature_class_array = numpy.array(gpx_points, numpy.dtype(
+    [
+        ('x', numpy.float),
+        ('y', numpy.float),
+        ('z', numpy.float),
+        ('Timestamp', '|S32'),
+        ('Track Name', '|S32'),
+        ('Water Depth', numpy.float)
+    ]))
 wgs84 = arcpy.SpatialReference(4326, 115700)
-arcpy.da.NumPyArrayToFeatureClass(feature_class_array, output_feature_class, ("x", "y", "z"), wgs84)
+arcpy.da.NumPyArrayToFeatureClass(feature_class_array, output_feature_class, ('x', 'y', 'z'), wgs84)
