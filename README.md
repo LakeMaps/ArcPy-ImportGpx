@@ -1,10 +1,9 @@
-<h1 align="center">
+<p align="center">
     <a href="https://github.com/LakeMaps">
         <img src="https://avatars.githubusercontent.com/u/20632669?s=200" alt="Lake Maps NL" />
     </a>
-    <br>
-    <code>ImportGpx</code> ArcGIS Pro Script Tool
-</h1>
+</p>
+<h1 align="center"><code>ImportGpx</code> ArcGIS Pro Script Tool</h1>
 
 An [ArcGIS Pro](http://www.esri.com/arcgis/products/arcgis-pro/overview/) script to to import track depths from a [GPX file] that uses Garmin's Track Point Extension. This was tested and is is primarily used with GPX files produced by a [Garmin echoMAP™ 42dv](https://buy.garmin.com/en-CA/CA/p/148128).
 
