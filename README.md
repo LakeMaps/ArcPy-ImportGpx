@@ -5,7 +5,7 @@
 </p>
 <h1 align="center"><code>ImportGpx</code> ArcGIS Pro Script Tool</h1>
 
-An [ArcGIS Pro](http://www.esri.com/arcgis/products/arcgis-pro/overview/) script tool to import track depths from a [GPX file] that uses Garmin's Track Point Extension. This was tested and is is primarily used with GPX files produced by a [Garmin echoMAP™ 42dv](https://buy.garmin.com/en-CA/CA/p/148128).
+An [ArcGIS Pro](http://www.esri.com/arcgis/products/arcgis-pro/overview/) script tool to import track depths from a [GPX file] that uses Garmin's Track Point Extension. This was tested and is primarily used with GPX files produced by a [Garmin echoMAP™ 42dv](https://buy.garmin.com/en-CA/CA/p/148128).
 
   [GPX file]:https://en.wikipedia.org/wiki/GPS_Exchange_Format
 
