@@ -28,11 +28,11 @@ How do I get this into an ArcGIS Pro project?
 
 1. Download this repository
 2. Open or create an ArcGIS Pro project
-1. Right-click a toolbox in the Project, select *New > Script*
+3. Right-click a toolbox in the Project, select *New > Script*
 
     <img alt="New > Script" src="https://user-images.githubusercontent.com/1623628/29491094-758b9214-852b-11e7-9470-ed52b842721d.png">
 
-2. Populate the metadata fields for the script
+4. Populate the metadata fields for the script
 
     The *Script File* field should contain the path to the script in the downloaded copy of this repository—the remaining fields do not need to contain anything in particuar. The *Parameters* tab for the script should have the following two rows, one input file and one output feature class:
 
