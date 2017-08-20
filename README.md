@@ -35,12 +35,12 @@ How do I get this into an ArcGIS Pro project?
 2. Populate the metadata fields for the script
 
     The *Script File* field should contain the path to the script in the downloaded copy of this repository—the remaining fields do not need to contain anything in particuar. The *Parameters* tab for the script should have the following two rows, one input file and one output feature class:
-    
+
     | Label | Name | Data Type | Type | Direction | Category | Filter |
     | ----- | ---- | --------- | ---- | --------- | -------- | ------ |
-    | GPX file| `GPX_file` | File | Required | Input | | File\* |
+    | GPX file | `GPX_file` | File | Required | Input | | File\* |
     | Output feature class | `Output_feature_class` | Feature Class | Required | Output | | Feature Type\*\* |
-    
+
     \* Add "gpx" to the list of extensions for the File Filter
     \*\* Select *Point* for the Feature Type Filter
 
