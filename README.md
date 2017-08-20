@@ -41,7 +41,7 @@ How do I get this into an ArcGIS Pro project?
     | GPX file | `GPX_file` | File | Required | Input | | File\* |
     | Output feature class | `Output_feature_class` | Feature Class | Required | Output | | Feature Type\*\* |
 
-    \* Add "gpx" to the list of extensions for the File Filter
+    \* Add "gpx" to the list of extensions for the File Filter<br>
     \*\* Select *Point* for the Feature Type Filter
 
     <img alt="Script General Information" src="https://user-images.githubusercontent.com/1623628/29491076-f0d9e354-852a-11e7-8549-03c7f1e87dc3.PNG">
