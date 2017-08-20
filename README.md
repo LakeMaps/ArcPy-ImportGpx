@@ -38,10 +38,11 @@ How do I get this into an ArcGIS Pro project?
     
     | Label | Name | Data Type | Type | Direction | Category | Filter |
     | ----- | ---- | --------- | ---- | --------- | -------- | ------ |
-    | GPX file| `GPX_file` | File | Required |  Input | |  File |
-    | Output feature class | `Output_feature_class` | Feature Class | Required | Output | | Feature Type\* |
+    | GPX file| `GPX_file` | File | Required | Input | | File\* |
+    | Output feature class | `Output_feature_class` | Feature Class | Required | Output | | Feature Type\*\* |
     
-    \* Select *Point* for the Feature Type Filter
+    \* Add "gpx" to the list of extensions for the File Filter
+    \*\* Select *Point* for the Feature Type Filter
 
     <img alt="Script General Information" src="https://user-images.githubusercontent.com/1623628/29491076-f0d9e354-852a-11e7-8549-03c7f1e87dc3.PNG">
     <img alt="Script Parameters" src="https://user-images.githubusercontent.com/1623628/29491073-f0ceb2ea-852a-11e7-92b7-7b29f72aca1a.PNG">
