@@ -45,8 +45,8 @@ feature_class_array = numpy.array(gpx_points, numpy.dtype(
         ('x', numpy.float),
         ('y', numpy.float),
         ('z', numpy.float),
-        ('Timestamp', '|S32'),
-        ('Track Name', '|S32'),
+        ('Timestamp', numpy.bytes_, 32),
+        ('Track Name', numpy.bytes_, 32),
         ('Water Depth', numpy.float)
     ]))
 wgs84 = arcpy.SpatialReference(4326, 115700)
