@@ -30,7 +30,7 @@ How do I get this into an ArcGIS Pro project?
 2. Open or create an ArcGIS Pro project
 3. Right-click a toolbox in the Project, select *New > Script*
 
-    <img alt="New > Script" src="https://user-images.githubusercontent.com/1623628/29491094-758b9214-852b-11e7-9470-ed52b842721d.png">
+    <img alt="New &gt; Script" src="https://user-images.githubusercontent.com/1623628/29491094-758b9214-852b-11e7-9470-ed52b842721d.png">
 
 4. Populate the metadata fields for the script
 
