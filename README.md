@@ -15,7 +15,6 @@ Build status
 | Branch        | Build Status            |
 | ------------- | ----------------------- |
 | `master`      | [![Build Status][1]][3] |
-| `development` | [![Build Status][2]][3] |
 
   [1]:https://travis-ci.org/LakeMaps/ArcPy-ImportGpx.svg?branch=master
   [2]:https://travis-ci.org/LakeMaps/ArcPy-ImportGpx.svg?branch=development
